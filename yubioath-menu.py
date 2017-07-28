@@ -65,9 +65,10 @@ except ImportError:
         from gi import pygtkcompat
 
         pygtkcompat.enable_gtk(version='3.0')
+
+        import gtk
     except ImportError:
         pass
-
 
 class NoCardFound(Exception):
     pass
